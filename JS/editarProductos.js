@@ -39,7 +39,7 @@ function buscarid(id){
 
 
 btnGuardar.addEventListener('click',()=>{
-    const contenedorCategorias= JSON.parse(localStorage.getItem("contenedorCategorias"))
+    contenedorCategorias= JSON.parse(localStorage.getItem("contenedorCategorias"))
     contenedorCategorias.forEach(element => {
         element.categoria.forEach(element =>{
             element.productos.forEach(element =>{
