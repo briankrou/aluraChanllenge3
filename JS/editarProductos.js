@@ -39,7 +39,7 @@ function buscarid(id){
 
 
 btnGuardar.addEventListener('click',()=>{
-    contenedorCategorias= JSON.parse(localStorage.getItem("contenedorCategorias"))
+ 
     contenedorCategorias.forEach(element => {
         element.categoria.forEach(element =>{
             element.productos.forEach(element =>{
@@ -49,9 +49,21 @@ btnGuardar.addEventListener('click',()=>{
                     element.precio=precioinput.value;
                     element.descripcion=descripcioninput.value;
                     localStorage.setItem('contenedorCategorias',JSON.stringify(contenedorCategorias))
+
+
+                    
                 }
             })
         })
     });
+
+
+    idinput.value="";
+    urlinput.value="";
+    categoriainput.textContent="";
+    nombreinput.value="";
+    precioinput.value="";
+    descripcioninput.value="";
+    console.log("borrando")
     
 })
