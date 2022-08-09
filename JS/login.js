@@ -7,7 +7,16 @@
 
     btnAgregar.addEventListener('click',()=>{
 
-            usuario.value="";
-            contraseña.value="";
+            if(usuario.value=="Administrador"){
+                if(contraseña.value=="Contraseña@22"){
+                    window.location.replace("./productos.html");
+                }else{
+                    
+                }   
+
+            }else{
+
+            }
+       
 
     })
