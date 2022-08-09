@@ -1,9 +1,15 @@
 :root{
     --fuente-principal:'Raleway', sans-serif;
 }
+
+li{
+    list-style:none;
+    text-decoration: none;
+}
 a{
     text-decoration: none;
     outline: none;
+
 }
 a:hover{
    color: #2A7AE4;
