@@ -16,18 +16,19 @@ function campturainformacion(evento){
 function crealElemto(id,url,categoria,nombre,descripcion,precio){
     let li=document.createElement('li')
     const lo=`
-
-        <div>
-            <a href="./editarProducto.html" onclick="campturainformacion()" ><img src="./img/editar.png"></img></a>
-            <a onclick="elminarProducto()" ><img src="./img/eliminar.png"></img></a>          
-        </div>
-        <img class="item__img" src="${url}">
-        <div>
-            <p>ID: ${id}</p>
-            <p>Categoria: ${categoria}</p>
-            <figcaption class="item__img__nombre">${nombre}</figcaption>
-            <p class="item__img__descripcion">${descripcion}</p>
-            <p class="item__img__precio">$ ${precio}</p>
+        <div class="contenedor_producto">
+            <div class="menuEditar">
+                <a href="./editarProducto.html" onclick="campturainformacion()" ><img src="./img/editar.png"></img></a>
+                <a onclick="elminarProducto()" ><img src="./img/eliminar.png"></img></a>          
+            </div>
+            <img class="item__img" src="${url}">
+            <div>
+                <p>ID: ${id}</p>
+                <p>Categoria: ${categoria}</p>
+                <figcaption class="item__img__nombre">${nombre}</figcaption>
+                <p class="item__img__descripcion">${descripcion}</p>
+                <p class="item__img__precio">$ ${precio}</p>
+            </div>
         </div>
         `
 
